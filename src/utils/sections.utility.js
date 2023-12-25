@@ -1,5 +1,5 @@
 export let INITIAL_SECTIONS = [
-  "automobiles",
+  "automóviles",
   "books",
   "business",
   "fashion",
@@ -8,7 +8,7 @@ export let INITIAL_SECTIONS = [
   "insider",
   "magazine",
   "movies",
-  "nyregion",
+  "region",
   "obituaries",
   "opinion",
   "politics",
