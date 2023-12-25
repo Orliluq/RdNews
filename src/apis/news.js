@@ -6,7 +6,13 @@ export const API = axios.create({
 })
 
 export const getTopNews = ({ keyword = "home" }) => {
-  return API.get(`topstories/v2/${keyword}.json?api-key=${KEY}`)
+  return API.get(`topstories/v2/science${keyword}.json?api-key=${KEY}`)
+}
+
+export const getSections = () => {
+  return API.get(`news/v3/mostpopular/v2/viewed/1.json?api-key${KEY}`).then(
+    res => res.data.results
+  )
 }
 
 export const getSections = () => {
